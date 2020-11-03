@@ -1,34 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/fishball.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>精典泰迪的奶茶舖</title>
 </head>
+
 <body>
-     <!-- 主頁 -->
-     <div data-role="page" id="page00">
+    <!-- 主頁 -->
+    <div data-role="page" id="page00">
 
         <div data-role="header">
 
-            <h1>咖啡廳介紹</h1>
+            <h1>北海魚丸店</h1>
+
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+            <div class="picture">
+                <img src="images/北海logo.jpg" alt="">
+            </div>
+            <h2>北海魚丸以一句「用良心，手造每一顆魚丸」為宗旨。所有食材皆是真材實料，堅持不加入任何化學添加物，以純天然食材，擄獲所有顧客的芳心。保證讓你吃得安心，並且回味無窮。</h2>
+        </div>
+        <ol data-role="listview" data-inset="true">
+            <li><a href="#page01">北海20周年慶祝活動</a></li>
+            <li><a href="#page02">推薦餐點</a></li>
+            <li><a href="#page03">門市據點</a></li>
+            <li><a href="#page04">外部連結</a></li>
+        </ol>
+
+
+        <!-- /content -->
+        <div data-role="footer" data-position="fixed">
+
+            <h4>Copyright &copy; 1108211071 王昱翔 @midhomework</h4>
+
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+
+    <!-- 第一分頁 -->
+    <div data-role="page" id="page01">
+
+        <div data-role="header">
+            <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+            <h1>北海20周年慶祝活動</h1>
 
         </div>
         <!-- /header -->
 
         <div role="main" class="ui-content">
 
-            <div id="picture" style="text-align: center">
-                <img src="1.png" >
+            <div class="picture">
+                <img src="images/20周年.jpg">
             </div>
-            <p>歡迎來到咖啡廳，我們不只是咖啡廳，我們還有熊ヾ(:3ﾉｼヾ)ﾉｼ 三[____]</p>
-            <p>邊享受美食，又有熊可以看，何等享受，簡直天皇在世。在一個人類和動物共同和諧地相處的城市的一角，有家白熊（北極熊）經營的「北極熊Café」。咖啡廳的客人從人類到動物，無所不有。其中的常客當屬熊貓兄（大熊貓）以及企鵝先生（皇帝企鵝）。它們時常坐在吧檯邊，邊喝咖啡邊說著每天身邊發生的新鮮事。</p>
-            <li><a href="#page01">咖啡廳特色</a></li>
-            <li><a href="#page02">咖啡廳菜單</a></li>
-            <li><a href="#page03">咖啡廳新品</a></li>
-            <li><a href="#page04">咖啡廳門市</a></li>
+            <h2>北海魚丸迎來20周年!讓我們一起來看看有什麼好康的吧!</h2>
+            <li style="font-size: 24pt;">好康1</li>
+            <h3>消費每滿200元，就送一張20元折價券</h3>
+            <div class="picture">
+                <img src="images/折價券.jpg">
+            </div>
+
+
+            <li style="font-size: 24pt;">好康2</li>
+            <h3>消費滿500元即贈送北海特色A4資料夾</h3>
+            <div class="picture">
+                <img src="images/file.jpg">
+            </div>
+            <p>(超精緻的資料夾還不收集嗎？)</p>
 
         </div>
         <!-- /content -->
+        <div data-role="footer" data-position="fixed">
+
+            <h4>Copyright &copy; 1108211071 王昱翔 @midhomework</h4>
+
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+    <!-- 第二分頁 -->
+    <div data-role="page" id="page02">
+
+        <div data-role="header">
+            <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+            <h1>推薦餐點</h1>
+
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+
+            <div class="picture">
+                <img src="images/定食.jpg">
+            </div>
+            <div data-role="collapsibleset">
+                <div data-role="collapsible">
+                    <h1>主食</h1>
+                    <p>肉燥飯</p>
+                    <p>滷肉飯</p>
+                    <p>綜合丸烏龍湯麵</p>
+                    <p>肉燥乾米粉</p>
+                </div>
+                <div data-role="collapsible">
+                    <h1>湯</h1>
+                    <p>北海綜合丸湯</p>
+                    <p>燕餃湯</p>
+                    <p>大綜合丸湯</p>
+                    <p>全員大集合湯</p>
+                </div>
+                <div data-role="collapsible">
+                    <h1>小菜</h1>
+                    <p>滷魚肚</p>
+                    <p>嫩豆腐</p>
+                    <p>玉蔥涼拌</p>
+                    <p>蔬果沙拉</p>
+                    <p>白菜滷</p>
+                    <p>辣蘿蔔</p>
+                    <p>海苔炸卷</p>
+                </div>
+                <div data-role="collapsible">
+                    <h1>定食</h1>
+                    <div data-role="collapsible">
+                        <h1>微量定食</h1>
+                        <p>微小肉燥飯</p>
+                        <p>半顆蛋+一塊油豆腐</p>
+                        <p>蔬果沙拉</p>
+                        <p>微小湯(一顆燕餃+一顆虱目魚丸)</p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h1>燕餃定食</h1>
+                        <p>小肉燥飯</p>
+                        <p>半顆蛋+一塊油豆腐</p>
+                        <p>白菜滷</p>
+                        <p>燕餃湯</p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h1>大綜合定食</h1>
+                        <p>小肉燥飯</p>
+                        <p>大綜合丸湯</p>
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h1>甜品</h1>
+                    <p>豆花</p>
+                    <p>抹茶布丁</p>
+                    <p>北海綠茶</p>
+                    <p>冬瓜茶</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- /content -->
+        <div data-role="footer" data-position="fixed">
+
+            <h4>Copyright &copy; 1108211071 王昱翔 @midhomework</h4>
+
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+
+    <!-- 第三分頁 -->
+    <div data-role="page" id="page03">
+
+        <div data-role="header">
+
+            <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+            <h1>門市據點</h1>
+
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+
+            <div class="picture">
+                <img src="images/岡山店.jpg">
+            </div>
+            <h2>岡山門市</h2>
+            <p>(07)624-0677</p>
+            <p>高雄市岡山區維仁路5號</p>
+            <div class="picture">
+                <img src="images/至聖店.jpg">
+            </div>
+            <h2>至聖門市</h2>
+            <p>(07)558-5066</p>
+            <p>高雄市左營區至聖路181號</p>
+
+
+        </div>
+        <!-- /content -->
+        <div data-role="footer" data-position="fixed">
+
+            <h4>Copyright &copy; 1108211071 王昱翔 @midhomework</h4>
+
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+    <!-- 第四分頁 -->
+    <div data-role="page" id="page04">
+
+        <div data-role="header">
+            <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+            <h1>外部連結</h1>
+
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0E9Fb9XphGI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p></p>
+
+        </div>
+        <!-- /content -->
+        <div data-role="footer" data-position="fixed">
+
+            <h4>Copyright &copy; 1108211071 王昱翔 @midhomework</h4>
+
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- /page -->
 </body>
+
 </html>
