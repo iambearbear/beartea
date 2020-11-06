@@ -24,10 +24,19 @@
     width: 100%;
     height: 100%;
 }
-#introduction>h2{
-    text-align: center;
-}
-#introduction>p{
+
+#introduction>h2 {
     text-align: center;
 }
 
+#introduction>p {
+    text-align: center;
+}
+
+#activity {
+    text-align: center;
+}
+
+#activity>h1 {
+    color: rgb(37, 85, 219);
+}
